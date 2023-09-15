@@ -50,7 +50,7 @@ const App = () => {
 
   return (
     <>
-      <div className="container mx-auto md:h-screen overflow-y-hidden">
+      <div className="container mx-auto"> {/* md:h-screen overflow-y-hidden */}
         <Header/>
         
         <div className="mt-5 md:flex">

@@ -123,7 +123,7 @@ const Formulario = ({addPaciente, editando, setEditando, editarPaciente}) => {
                 
                 <div className="mt-5">
                     <label htmlFor="celular" className="block text-gray-700 uppercase font-bold">Numero Celular</label>
-                    <input id="celular" type="number" onChange={(e) => setCelular(e.target.value)} value={celular} placeholder="Celular del proprietario" className="outline-none border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"/>
+                    <input id="celular" type="number" onChange={(e) => setCelular(e.target.value.trim().substring(0, 10))} value={celular} placeholder="Celular del proprietario" className="outline-none border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"/>
                 </div>
                 
                 <div className="mt-5">
